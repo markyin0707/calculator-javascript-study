@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+    <script src="herf.js"></script>
+</head>
+<!-- 
+    简易计算机需要的内容(布局):1文本框，10数字，4运算符号，1小数点，1退位键，1等号，1清屏(20(4*5/5*4)个按钮(多一个)+1文本框)
+-->
+<body onload="init(),init_homePage()">
+    <div id="div1">
+        <div id="div2">
+            <!-- 一个文本框 -->
+            <!-- 
+                注意：input一般外层有一个<form></form>，form里面最关键的属性action，现在不需要给后代进行传递，此处添加不添加都可以。有后台就必须添加form
+                action作用：往后台进行传递。action里面所指明的是，后台里面的某一个程序继续来获取当前表单元素继续进行处理
+            -->
+            <!-- 文本框禁用(也可以在js里设置)，禁用过后背景色会变为灰色，边框也会改变，可以通过css修改 -->
+            <input type="text" disabled="disabled" name="" id="textbox">
+        </div>
+        <div id="div3">
+            <!-- 需要20个按钮 -->
+            <!-- 这里的value返回的是一个字符串类型 -->
+            <input type="button" value="c" name="" id="">
+            <input type="button" value="←" name="" id="">
+            <input type="button" value="+/-" name="" id="">
+            <input type="button" value="/" name="" id="">
+            <input type="button" value="1" name="" id="">
+            <input type="button" value="2" name="" id="">
+            <input type="button" value="3" name="" id="">
+            <input type="button" value="*" name="" id="">
+            <input type="button" value="4" name="" id="">
+            <input type="button" value="5" name="" id="">
+            <input type="button" value="6" name="" id="">
+            <input type="button" value="-" name="" id="">
+            <input type="button" value="7" name="" id="">
+            <input type="button" value="8" name="" id="">
+            <input type="button" value="9" name="" id="">
+            <input type="button" value="+" name="" id="">
+            <input type="button" value="0" name="" id="">
+            <input type="button" value="." name="" id="">
+            <input type="button" value="=" name="" id="">
+            <input type="button" value="首页" name="" id="homePage">
+        </div>
+    </div>
+    
+</body>
+</html>
