@@ -4,30 +4,34 @@
     padding: 0px;
 }
 div{
+    
     /* 调整所有div */
-    width: 170px;
+    width: 400px;
 }
 #div1{
     /* 调整大的div位置 */
-    position: relative;
-    top: 60px;
-    left: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 input[type="button"]{
-    width: 30px;
+    width: 90px;
+    height: 40px;
     /* 设置右边距。一般都设置右边距，左边对齐，右边距可以空白 */
     margin-right: 5px;
 }
 /* 结合f12调整距离，调整文本框和按钮长度都可以，这里调整文本框更方便，计算得35*4=140px */
 input[type="text"]{
-    width: 149px;
+    width: 390px;
+    margin-bottom: 10px;
     /* 右对齐 */
     text-align: right;
     background-color: white;
     border: 1px solid;
     padding-right: 5px;
-    /* 可以布延伸 */
+    /* 可以让边框不延伸 */
     box-sizing: border-box; 
 }
 

@@ -1,5 +1,3 @@
-const numberFormatHelper = require("hexo/lib/plugins/helper/number_format");
-
 // 建议初始化放在一起，一个函数里面，不建议放在html标签里(表单得value=0)
 function init(){
     var textbox=document.getElementById("textbox");//前后等价
